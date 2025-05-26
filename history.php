@@ -70,11 +70,11 @@ function get($limit = 30)
                         <td class="p-2">
                             <a href="edit.php?id=<?= $row['id'] ?>" class="border border-green-500 rounded px-2 py-1 text-green-500 text-xs">Edit</a>
                         </td>
-                        <td class="p-2" nowrap="nowrap"><?= "" ?></td>
-                        <td class="p-2"><?= "" ?></td>
-                        <td class="p-2"><?= "" ?></td>
-                        <td class="p-2"><?= "" ?></td>
-                        <td class="p-2"><?= "" ?></td>
+                        <td class="p-2" nowrap="nowrap"><?= $row['recorded_at'] ?></td>
+                        <td class="p-2"><?= $row['weight'] ?></td>
+                        <td class="p-2"><?= $row['heart_rate'] ?></td>
+                        <td class="p-2"><?= $row['systolic'] ?></td>
+                        <td class="p-2"><?= $row['diastolic'] ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
