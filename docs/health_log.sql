@@ -1,0 +1,10 @@
+CREATE TABLE health_records (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    weight FLOAT NOT NULL,
+    heart_rate INT NOT NULL,
+    systolic INT NOT NULL,
+    diastolic INT NOT NULL,
+    recorded_at DATE UNIQUE NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
