@@ -17,10 +17,11 @@ const keypointPairs = [
     [12, 14], [14, 16]
 ];
 
+// Ctrl + Shift + R
 async function setupCamera() {
-    // const stream = await navigator.mediaDevices.getUserMedia({ video: { width: 640, height: 480 } });
-    // video.srcObject = stream;
-    // await video.play();
+    const stream = await navigator.mediaDevices.getUserMedia({ video: { width: 640, height: 480 } });
+    video.srcObject = stream;
+    await video.play();
 }
 
 /**
