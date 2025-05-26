@@ -7,10 +7,13 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // TODO: POSTデータの取得
-$posts = [];
+$posts = $_POST;
 
 // TODO: セッション(form)で入力値を保持
-$_SESSION['form'] = [];
+$_SESSION['form'] = $_POST;
+
+// var_dump($posts);
+// exit;
 
 if (hasDuplicate($posts)) {
     // 重複があればエラーメッセージを表示
