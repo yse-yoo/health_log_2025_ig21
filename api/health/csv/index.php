@@ -23,6 +23,9 @@ header("Content-Disposition: attachment; filename={$csv_file}");
 // CSVのヘッダー行
 fputcsv($output, ['recorded_at', 'weight', 'heart_rate', 'systolic', 'diastolic']);
 // TODO: CSVのデータを foreach で繰り返し出力
+foreach ($rows as $row) {
+    fputcsv($output, $row);
+}
 
 fclose($output);
 exit;
