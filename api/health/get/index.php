@@ -15,3 +15,5 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // レスポンスヘッダーを設定
 header('Content-Type: application/json');
 // TODO: JSON形式で出力
+echo json_encode($data);
+exit;
